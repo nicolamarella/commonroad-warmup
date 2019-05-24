@@ -36,3 +36,5 @@ Nothing much to say, just use g++ compiler to build the program or user [compile
 
 ### Final notes
 Project is heavily improvised and can be improved A LOT. Also communication with Python could (should?) be implemented with the [Python embedding library](https://docs.python.org/2/extending/embedding.html). If I'll have time I'll branch and do it. 
+
+Furthermore specifications were not so strict on how to make Python and C++ communicate, there are plenty of ways. It would have been so much fun running python while listening to a socket and use that to communicate in realtime with one or more C++ instances moving objects in the scenario. Again, if time, I'll branch and do it :)

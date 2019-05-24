@@ -1,7 +1,7 @@
 # Common Road "warmup" task
 
 ### Specifications
-the idea is that we want to implement a simple python script to load a Common Road scenario and later on use that same script from a C++ program which will pass some variables (i.e. position, velicity, etc) to create or update an object in the scenario and get the state of an arbitrary object. Basically:
+the idea is that we want to implement a simple python script to load a Common Road scenario and later on use that same script from a C++ program which will pass some variables (i.e. position, velocity, etc) to create or update an object in the scenario and get the state of an arbitrary object. Basically:
 1. Make python work with CommonRoad_io library to load a scenario
 2. Call that script with the right parameters and read output from C++
 
@@ -30,11 +30,11 @@ optional arguments:
 ```
 
 ### C++ setup
-Nothing much to say, just use g++ compiler to build the program or user [compileAndRun.sh](src/compileAndRun.sh) to automatically compile and run from console.
+Nothing much to say, just use g++ compiler to build the program or use [compileAndRun.sh](src/compileAndRun.sh) to automatically compile and run from console.
 
-**Important:** C++ programm will call python interpreter based on the ENV variables, so it must be executed from inside Python virutal env (or just make C++ code better :smile: ).
+**Important:** C++ programm will call python interpreter based on the ENV variables, so it must be executed from inside the Python virutal env (or just make C++ code better :smile: ).
 
 ### Final notes
 Project is heavily improvised and can be improved A LOT. Also communication with Python could (should?) be implemented with the [Python embedding library](https://docs.python.org/2/extending/embedding.html). If I'll have time I'll branch and do it. 
 
-Furthermore specifications were not so strict on how to make Python and C++ communicate, there are plenty of ways. It would have been so much fun running python while listening to a socket and use that to communicate in realtime with one or more C++ instances moving objects in the scenario. Again, if time, I'll branch and do it :)
+Furthermore specifications were not so strict on how to make Python and C++ communicate, there are plenty of ways. It would have been so much fun running python while listening to a socket and use that to communicate in realtime with one or more C++ instances moving objects in the scenario. Again, if time, I'll branch and do it :smile:
